@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  background-color: #cae0d1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #d9b8af;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 10px 3px #53336b;
+}
+.navbar p {
+  font-family: "Nunito", sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-left: 10px;
+  color: #53336b;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-right: 10px;
+}
+.navbar ul li {
+  color: #53336b;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.main {
+  max-width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 10px;
+}
+.main .card {
+  max-width: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #faa967;
+  box-shadow: 1px 1px 5px 1px #53336b;
+}
+.main .card .image-container {
+  width: 100%;
+}
+.main .card .image-container img {
+  width: 100%;
+}
+.main .card .info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+.main .card .info-container .info-text {
+  color: #53336b;
+  font-weight: bolder;
+}
+.main .card .info-container .info-text--bold {
+  font-family: "Nunito", sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.main .card .info-container .info-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #53336b;
+  box-shadow: 0px 0px 2px 1px #d9b8af;
+  border-radius: 50%;
+  color: #cae0d1;
+  width: 40px;
+  height: 40px;
+}
+.main .card .info-container .info-right .info-score {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+}
+
+.modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.modal .content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #faa967;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+  z-index: 10;
+  max-width: 1000px;
+  max-height: 90%;
+  margin: 0 10px;
+}
+.modal .content-container .image-container {
+  height: 80vh;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.modal .content-container .image-container img {
+  height: 100%;
+}
+.modal .content-container .modal-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 65%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.modal .content-container .modal-right .info-container {
+  margin-bottom: 10px;
+  max-width: 600px;
+  display: flex;
+}
+.modal .content-container .modal-right .info-container header {
+  align-self: stretch;
+  padding: 20px;
+  background-color: #53336b;
+  color: #cae0d1;
+}
+.modal .content-container .modal-right .info-container .info-description {
+  background-color: #d9b8af;
+  padding: 10px;
+  color: #53336b;
+}
+.modal .content-container .modal-right .info-container .info-description .description-text {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+.modal .content-container .modal-right .info-container .info-description .description-details p {
+  font-weight: bold;
+}
+.modal .content-container .modal-right .info-container .info-description .description-details p span {
+  font-weight: normal;
+}
+.modal .content-container .modal-right .modal-carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.modal .content-container .modal-right .modal-carousel img {
+  max-width: 20%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal .modal-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(104, 85, 124, 0.5);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #68557c;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  color: #cae0d1;
+}
+
+@media (max-width: 1000px) {
+  .modal .content-container {
+    justify-content: center;
+    max-width: 700px;
+  }
+  .modal .content-container .modal-right {
+    max-width: 90%;
+  }
+}/*# sourceMappingURL=main.css.map */

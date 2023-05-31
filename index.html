@@ -2,12 +2,137 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/public/icon2.jpg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <link rel="stylesheet" href="/src/styles/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;600&family=Nunito:wght@200;300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>MyWaifuColl</title>
   </head>
   <body>
-    <div id="app"></div>
+    <nav class="navbar">
+      <p>MyWaifu Coll</p>
+      <ul>
+        <li><a>About</a></li>
+        <li><a>Contact Us</a></li>
+        <li><a>Add Waifu</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <div class="card">
+        <div class="image-container">
+          <img
+            src="./public/8b35aad5c840d2b6c23a4f5b5d7f251c.jpg"
+            alt="Waifu image"
+          />
+        </div>
+        <div class="info-container">
+          <div class="info-left info-side">
+            <p class="info-text info-text--bold">Waifu</p>
+            <p class="info-text">From waifu pinterest</p>
+          </div>
+          <div class="info-right info-side">
+            <span class="info-score">5</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-container">
+          <img
+            src="./public/8b35aad5c840d2b6c23a4f5b5d7f251c.jpg"
+            alt="Waifu image"
+          />
+        </div>
+        <div class="info-container">
+          <div class="info-left info-side">
+            <p class="info-text info-text--bold">Waifu</p>
+            <p class="info-text">From waifu pinterest</p>
+          </div>
+          <div class="info-right info-side">
+            <span class="info-score">5</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-container">
+          <img
+            src="./public/8b35aad5c840d2b6c23a4f5b5d7f251c.jpg"
+            alt="Waifu image"
+          />
+        </div>
+        <div class="info-container">
+          <div class="info-left info-side">
+            <p class="info-text info-text--bold">Waifu</p>
+            <p class="info-text">From waifu pinterest</p>
+          </div>
+          <div class="info-right info-side">
+            <span class="info-score">5</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-container">
+          <img
+            src="./public/8b35aad5c840d2b6c23a4f5b5d7f251c.jpg"
+            alt="Waifu image"
+          />
+        </div>
+        <div class="info-container">
+          <div class="info-left info-side">
+            <p class="info-text info-text--bold">Waifu</p>
+            <p class="info-text">From waifu pinterest</p>
+          </div>
+          <div class="info-right info-side">
+            <span class="info-score">5</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="modal">
+      <div class="content-container">
+        <div class="image-container">
+          <img src="./public/megumin.jpg" alt="Waifu detail" />
+        </div>
+        <div class="modal-right">
+          <div class="info-container">
+            <header>
+              <h3 class="info-title">Megumin</h3>
+              <p class="info-subtitle">Konosuba</p>
+            </header>
+            <section class="info-description">
+              <p class="description-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto assumenda aspernatur, ducimus illum cum suscipit quas
+                similique sed repellat eaque id iure facilis numquam ea porro,
+                earum quia mollitia repellendus!
+              </p>
+              <div class="description-details">
+                <p>birthday: <span>02/02/20</span></p>
+                <p>Favorite Person: <span>Yunyun</span></p>
+                <p>Size: <span>150 cm</span></p>
+                <p>Favorite Food: <span>Meat</span></p>
+              </div>
+            </section>
+          </div>
+          <section class="modal-carousel">
+            <img src="./public/01.jpg" alt="">
+            <img src="./public/02.jpg" alt="">
+            <img src="./public/03.jpg" alt="">
+            <img src="./public/04.jpg" alt="">
+          </section>
+        </div>
+      </div>
+      <div class="modal-background"></div>
+    </section>
+    <footer class="footer">
+      <p>Made with ❤️ by Caper</p>
+    </footer>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
